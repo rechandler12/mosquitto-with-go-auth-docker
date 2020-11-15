@@ -3,8 +3,8 @@ FROM debian:stable-slim as builder
 
 #Set mosquitto and plugin versions.
 #Change them for your needs.
-ENV MOSQUITTO_VERSION=1.6.10
-ENV PLUGIN_VERSION=0.8.0
+ENV MOSQUITTO_VERSION=1.6.12
+ENV PLUGIN_VERSION=1.3.1
 ENV GO_VERSION=1.13.8
 
 WORKDIR /app
