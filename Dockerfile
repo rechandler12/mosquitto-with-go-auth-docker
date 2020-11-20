@@ -37,7 +37,7 @@ RUN mkdir mosquitto-go-auth && \
 FROM debian:stable-slim
 
 #Get mosquitto dependencies.
-RUN apt-get update && apt-get install -y libwebsockets8 libc-ares2 openssl uuid
+RUN apt-get update && apt-get install -y libwebsockets8 libc-ares2 openssl uuid ca-certificates
 
 #Setup mosquitto env.
 RUN mkdir -p /mosquitto/config /mosquitto/data /mosquitto/log
