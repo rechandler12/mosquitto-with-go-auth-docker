@@ -54,6 +54,6 @@ COPY --from=builder /usr/local/sbin/mosquitto /usr/sbin/mosquitto
 VOLUME ["/mosquitto/data", "/mosquitto/log"]
 
 # Set up the default command
-EXPOSE 1883
+EXPOSE 1883 8883
 
 CMD ["/usr/sbin/mosquitto", "-c", "/mosquitto/config/mosquitto.conf"]
